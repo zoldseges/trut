@@ -1,5 +1,5 @@
 /*
- * ATOM : [a-zA-Z]+;
+ * ATOM : [A-Z];
  *
  * OP : '&' | '|' | '>';
  *
@@ -35,16 +35,6 @@ struct Formula {
     struct TrueFormula *formula;
     char *atom;
   } data;
-};
-
-enum Token {
-  TOKEN_ATO,
-  TOKEN_NEG,
-  TOKEN_KON,
-  TOKEN_DIS,
-  TOKEN_IMP,
-  TOKEN_L_BR,
-  TOKEN_R_BR,
 };
 
 int main(void) {
